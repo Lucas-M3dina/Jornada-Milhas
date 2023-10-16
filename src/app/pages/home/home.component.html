@@ -5,11 +5,7 @@
 
   <h2>Promoções</h2>
   <div class="card-wrapper">
-    <app-card-busca></app-card-busca>
-    <app-card-busca></app-card-busca>
-    <app-card-busca></app-card-busca>
-    <app-card-busca></app-card-busca>
-    <app-card-busca></app-card-busca>
+    <app-card-busca *ngFor="let promocao of promocoes" [imagem]="promocao.imagem" [destino]="promocao.destino" [preco]="promocao.preco" ></app-card-busca>
 
   </div>
 
